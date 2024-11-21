@@ -17,12 +17,12 @@ from selenium.webdriver.support import expected_conditions as EC
 global prompt
 
 def jsonfinder():
-    file_pathJSON = f'C:\\Users\\{os.getlogin()}\\OneDrive - Richemont International SA\\Desktop\\python\\prompt engineering\\bettersteve.json'
+    file_pathJSON = f'bettersteve.json'
     fileJSON = open(file_pathJSON, 'r') 
     resultJSON = fileJSON.read()
     return(resultJSON)
 def txtfinder():
-    filepathtxt = f'C:\\Users\\{os.getlogin()}\\OneDrive - Richemont International SA\\Desktop\\python\\prompt engineering\PromptV2.txt'
+    filepathtxt = f'PromptV2.txt'
     fileTXT = open(filepathtxt, 'r')
     # Read the entire content of the file
     resulttxt = fileTXT.read()
@@ -34,7 +34,7 @@ def outlookread():
     posted_ats=[]
     summaries=[]
     # Load the CSV file
-    data = pd.read_csv(f'C:\\Users\\{os.getlogin()}\\OneDrive - Richemont International SA\\Desktop\\python\\Outlook export\\outlook.csv')
+    data = pd.read_csv(f'outlook.csv')
     array_data = data.values.tolist()
     body = [row[1] for row in array_data]
 
