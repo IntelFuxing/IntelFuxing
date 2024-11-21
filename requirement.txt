@@ -1,0 +1,6 @@
+selenium==3.141.0 
+upgrade urllib3==1.26.16
+pandas
+beautifulsoup4
+selenium
+pyperclip
